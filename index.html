@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+
+    <div class="content">
+      <form id="add-quotes-form">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="quotes" placeholder="Message" />
+        <button>Add Message</button>
+      </form>
+
+      <ul id="quotes-list"></ul>
+    </div>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAQTzD6l0lCxsKQJ1bhmpYwK5WwoIstPW4",
+        authDomain: "projectchange-b513f.firebaseapp.com",
+        databaseURL: "https://projectchange-b513f.firebaseio.com",
+        projectId: "projectchange-b513f",
+        storageBucket: "projectchange-b513f.appspot.com",
+        messagingSenderId: "840927508651",
+        appId: "1:840927508651:web:b86b22cb359ce554d09fee",
+        measurementId: "G-M3Z13ES5EQ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
